@@ -375,7 +375,7 @@ or medical advice.
 
     try:
 
-        (
+        response = client.models.generate_content(
             model="gemini-3.6-flash",
             contents=prompt
         )
@@ -963,7 +963,7 @@ Continue through Day 7.
 
     try:
 
-        (
+        response = client.models.generate_content(
             model="gemini-3.6-flash",
             contents=prompt
         )
