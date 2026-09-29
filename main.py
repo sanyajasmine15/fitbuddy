@@ -19,8 +19,7 @@ app = FastAPI(title="FitBuddy - AI Fitness Plan Generator")
 
 
 # Connect to Gemini
-client = genai.Client(api_key=API_KEY)
-
+client = genai.Client(api_key=API_KEY) if API_KEY else None
 
 def format_plan(text):
     """
